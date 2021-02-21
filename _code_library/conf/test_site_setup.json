@@ -1,0 +1,16 @@
+{  
+   "Site setup" : {
+      "directories" : {  
+         "assets" : [
+              "audio",
+              "video",
+              "fonts"
+          ],
+         "sites" : [
+              "a site",
+              "b site",
+              "c site"
+          ],
+      }
+   }
+}

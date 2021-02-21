@@ -1,0 +1,1 @@
+[21-Mar-2014 20:23:54 UTC] PHP Warning:  Missing argument 1 for minimize_header_and_update_session(), called in /home/dtca/public_html/functions/minimize_header_and_update_session_1.1.1.php on line 32 and defined in /home/dtca/public_html/functions/minimize_header_and_update_session_1.1.1.php on line 3

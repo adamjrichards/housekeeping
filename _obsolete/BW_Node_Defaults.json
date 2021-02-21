@@ -1,0 +1,62 @@
+{
+
+		
+		// $this->my_node_defaults->putAll( [
+			"MY_PROJECT" => "{$with_this_prefix}_Project",
+			"MY_SITE" => "{$with_this_prefix}_Site",
+			"MY_PAGE" => "{$with_this_prefix}_Page",
+			"MY_HTML_TAG" => "{$with_this_prefix}_HTML_Tag",
+			"MY_HEAD_TAG" => "{$with_this_prefix}_Head_Tag",
+			"MY_BODY_TAG" => "{$with_this_prefix}_Body_Tag",
+			"MY_HEADER_TAG" => "{$with_this_prefix}_Header_Tag",
+			"MY_MAIN_TAG" => "{$with_this_prefix}_Main_Tag",
+			"MY_FOOTER_TAG" => "{$with_this_prefix}_Footer_Tag",
+			"MY_LEFT_SIDEBAR" => "{$with_this_prefix}_Sidebar",
+			"MY_RIGHT_SIDEBAR" => "{$with_this_prefix}_Sidebar",
+			"MY_PORTAL" => "{$with_this_prefix}_Portal",
+			"MY_BANNER" => "{$with_this_prefix}_Banner",
+			"MY_SPLASH" => "{$with_this_prefix}_Splash",
+			"MY_LOGO" => "{$with_this_prefix}_Logo",
+			"MY_HUB" => "{$with_this_prefix}_Hub",
+			"MY_SMALLPRINT" => "{$with_this_prefix}_Smallprint",
+			"MY_ABOUT_ME" => "{$with_this_prefix}_About_Me",
+			"MY_CONTACT_ME" => "{$with_this_prefix}_Contact_Me",
+			"MY_META" => "{$with_this_prefix}_Meta",
+			"the_handle" => $with_this_handle,
+			"the_name" => "my_{$with_this_prefix}",
+			"the_title" => "The Black Willow Indigenous Dictionary Project",
+			"the_type" => "dom_node",
+			"the_parent" => "",
+			"the_left_sibling" => "append",
+			"the_meta" => "default",
+			"the_context" => "",
+			"the_template" => "",
+			"the_css_source" => "",
+			"the_node_opener" => "\n##!-------------------- $with_this_name begins here. -------------------->",
+			"the_node_closer" => "\n##!-------------------- $with_this_name ends here. -------------------->",
+			"the_source_folder" => strtolower( $with_this_name ),
+			"the_owner" => "Administrator",
+			"the_tagName" => "div",
+			"the_id" => "",
+			"the_className" => "",
+			"the_src" => "",
+			"the_inline_css" => "",
+			"the_trigger" => "onload='close_me( this )'",
+			"the_other_attributes" => "alt='THE TITLE GOES HERE'",
+			"the_namespace" => "$with_this_name",
+			"the_home_folder" => "W:\\workspaces\\{$GLOBALS[ "MY_HOME_FOLDER" ] }",
+			"the_manifest" => "W:\\workspaces\\{$GLOBALS[ "MY_HOME_FOLDER" ]}\\$with_this_prefix.manifest",
+			"the_index_page" => "",
+			"the_MIMEType"	=> "",
+			"the_JSON_source" => "{$with_this_prefix}_json\\$with_this_name.json",
+               "the_charset" => "utf-8",
+               "the_base_url" => "http://black_willow/"
+		] );
+	}
+	public function get_my_node_defaults() {
+		return $this->my_node_defaults;
+	}
+	public function get_the_node_default_with_a_key( $this_one ) {
+		return $this->my_node_defaults->get( $this_one );
+	}
+}
