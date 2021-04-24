@@ -1,0 +1,67 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>housekeeping</Name>
+    <ProjectGuid>{d848f38e-cdc5-4d9c-8175-a84e865bbd6e}</ProjectGuid>
+    <RootNamespace>housekeeping</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>8.0</RuntimeVersion>
+    <WebRoot>http://housekeeping</WebRoot>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>Custom</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+    <CustomServerUrl>http://housekeeping</CustomServerUrl>
+    <CustomXdebugPort>9000</CustomXdebugPort>
+    <PublishEvent>None</PublishEvent>
+    <DebugMappingMethod>Automatic</DebugMappingMethod>
+    <DBGpProxyEnabled>false</DBGpProxyEnabled>
+    <DBGpProxyPort>9001</DBGpProxyPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="HK_Console\HK_Console.phpproj" />
+    <Compile Include="HK_Console\index.php" />
+    <Compile Include="HK_Web\hk_core\_HK_FILE_HANDLER.php" />
+    <Compile Include="HK_Web\hk_dev\bw_autoload.php" />
+    <Compile Include="HK_Web\hk_dev\hk_backtrace.php" />
+    <Compile Include="HK_Web\hk_dev\hk_define_constants.php" />
+    <Compile Include="HK_Web\hk_dev\hk_dev_utilities.php" />
+    <Compile Include="HK_Web\hk_dev\hk_ln.php" />
+    <Compile Include="HK_Web\hk_dev\hk_map_dump.php" />
+    <Compile Include="HK_Web\hk_files\_notes\dwsync.xml" />
+    <Compile Include="HK_Web\hk_files\HK_Duplicate_File_Remover.php" />
+    <Compile Include="HK_Web\hk_files\HK_File_Comparator.php" />
+    <Compile Include="HK_Web\hk_files\HK_File_Distributor.php" />
+    <Compile Include="HK_Web\hk_files\HK_File_Distributor_2.php" />
+    <Compile Include="HK_Web\hk_files\HK_File_Filter.php" />
+    <Compile Include="HK_Web\hk_files\HK_File_Hunter.php" />
+    <Compile Include="HK_Web\hk_files\HK_File_Name_Fixer.php" />
+    <Compile Include="HK_Web\hk_files\HK_File_Prefixer.php" />
+    <Compile Include="HK_Web\hk_files\HK_File_Renamer.php" />
+    <Compile Include="HK_Web\hk_files\HK_File_Sorter.php" />
+    <Compile Include="HK_Web\hk_files\HK_Image_Converter.php" />
+    <Compile Include="HK_Web\HK_Web.phpproj" />
+    <Compile Include=".gitignore" />
+    <Compile Include="index.php" />
+    <Compile Include="php_info.php" />
+    <Compile Include="xdebug_info.php" />
+    <Compile Include="_index.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HK_Console" />
+    <Folder Include="HK_Web\hk_core" />
+    <Folder Include="HK_Web\hk_dev" />
+    <Folder Include="HK_Web\hk_files\_notes" />
+    <Folder Include="HK_Web\hk_files" />
+    <Folder Include="HK_Web" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>

@@ -1,8 +1,0 @@
-<svg version="1.1" id="the_basic_bw_shapes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0">
-	<defs>          
-		<circle id="the_bw_circle" class="shapes basic" r="100px" cx="100px" cy="100px" />         
-		<ellipse id="the_bw_ellipse" class="shapes basic" rx="100px" ry="50px" cx="100px" cy="50px" />
-          <text id="the_bw_text" class="shapes text"><!-- text --></text>
-          <rect id="the_bw_rectangle" class="shapes basic" x="100" width="100" height="100" rx="0" />
-     </defs>
-</svg> 
